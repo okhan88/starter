@@ -223,4 +223,74 @@ is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark
 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
 BMI (28.3) is higher than John's (23.9)!"
 Hint: Use an if/else statement
+
+
+let massMark1 = 78
+let heightMark1 = 1.69
+
+let massJohn1 = 92
+let heightJohn1 = 1.95
+
+let bmiMark1 = (massMark1) / (heightMark1**2)
+let bmiJohn1 = (massJohn1)/ (heightJohn1**2)
+
+let markHigherBMI1 = bmiMark1 > bmiJohn1
+// console.log(bmiMark1, bmiJohn1, markHigherBMI1)
+
+if (bmiMark1 > bmiJohn1) {
+    console.log(`Mark's BMI is higher than John's! Mark's BMI (${bmiMark1}) is higher than John's (${bmiJohn1})`)
+} else {
+    console.log("John's BMI is higher than Mark's!")
+}
+
+
+let massMark2 = 95
+let heightMark2 = 1.88
+
+let massJohn2 = 85
+let heightJohn2 = 1.76
+
+let bmiMark2 = (massMark2) / (heightMark2**2)
+let bmiJohn2 = (massJohn2)/ (heightJohn2**2)
+
+let markHigherBMI2 = bmiMark2 > bmiJohn2
+// console.log(bmiMark2, bmiJohn2, markHigherBMI2)
+
+if (bmiMark2 > bmiJohn2) {
+    console.log(`Mark's BMI is higher than John's! Mark's BMI (${bmiMark2}) is higher than John's (${bmiJohn2})`)
+} else {
+    console.log("John's BMI is higher than Mark's!")
+}
+
 */
+
+// --------------------------------------------------------------
+
+// type conversion and coercion
+
+
+ // type conversion: strings to numbers
+const inputYear = "1991"
+console.log(Number(inputYear) + 18) // correct way
+console.log (inputYear + 18) // incorrect way
+
+// type conversion: numbers to string
+console.log(String(23))
+
+
+// type coercion
+
+// JS automatically converts numbers to string using the + operator, as in this case below. You do not have to turn 23 to a string
+console.log("I am " + 23 + " years old")
+
+// with the - operator, JS autmatically converts strings to numbers
+console.log('23' - '10' - 3) 
+console.log ('23' - '10' + 3)
+
+let n = '1' + 1; 
+n = n - 1;
+console.log (n)
+
+console.log (2+3+4+ '5') // 2+3+4 = 9, 9 concatenates with 5 (a string) to get 96
+
+console.log ('10' - '4' - '3' - 2 + '5')
