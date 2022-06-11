@@ -266,31 +266,89 @@ if (bmiMark2 > bmiJohn2) {
 
 // --------------------------------------------------------------
 
+
 // type conversion and coercion
 
 
- // type conversion: strings to numbers
-const inputYear = "1991"
-console.log(Number(inputYear) + 18) // correct way
-console.log (inputYear + 18) // incorrect way
+//  // type conversion: strings to numbers
+// const inputYear = "1991"
+// console.log(Number(inputYear) + 18) // correct way
+// console.log (inputYear + 18) // incorrect way
 
-// type conversion: numbers to string
-console.log(String(23))
+// // type conversion: numbers to string
+// console.log(String(23))
 
 
 // type coercion
 
 // JS automatically converts numbers to string using the + operator, as in this case below. You do not have to turn 23 to a string
-console.log("I am " + 23 + " years old")
+// console.log("I am " + 23 + " years old")
 
-// with the - operator, JS autmatically converts strings to numbers
-console.log('23' - '10' - 3) 
-console.log ('23' - '10' + 3)
+// // with the - operator, JS autmatically converts strings to numbers
+// console.log('23' - '10' - 3) 
+// console.log ('23' - '10' + 3)
 
-let n = '1' + 1; 
-n = n - 1;
-console.log (n)
+// let n = '1' + 1; 
+// n = n - 1;
+// console.log (n)
 
-console.log (2+3+4+ '5') // 2+3+4 = 9, 9 concatenates with 5 (a string) to get 96
+// console.log (2+3+4+ '5') // 2+3+4 = 9, 9 concatenates with 5 (a string) to get 96
 
-console.log ('10' - '4' - '3' - 2 + '5')
+// console.log ('10' - '4' - '3' - 2 + '5')
+
+
+
+// --------------------------------------------------------------
+
+// truthy and falsy values
+
+// console.log(Boolean(0))
+// console.log(Boolean(undefined))
+// console.log(Boolean('chungus'))
+// console.log(Boolean({}))
+// console.log(Boolean(''))
+// // in practice, this conversion is not done really
+
+
+// const money = 0
+// if(money) {
+//     console.log("Dont use it all") // JS is trying to convert any condition into a boolean. because money is 0, then the condition is false and so the else block is executed. If you change 0 to any other number, then the if block will be executed
+// } else {
+//     console.log ("you should get a job")
+// }
+
+// let height;
+// if (height) {
+//     console.log(' yay height is defined')
+// } else {
+//     console.log ('height is undefined')
+// }
+// // height is undefined here because it has no value, this is why the else block is executed
+
+
+// --------------------------------------------------------------
+
+// equality operators
+
+const age = 18
+if (age === 18) console.log(' you just became an adult')
+
+console.log (18 === '18')
+console.log (18 == '18')
+console.log (18 == 18)
+
+const favorite = prompt("what's your favorite number")
+console.log(favorite)
+console.log(typeof favorite)
+
+if (favorite == 23) {
+    console.log(' cool you are cool')
+} else if(favorite === "7") {
+    console.log(' 7 is cool')
+} else {
+    console.log ("your number is not 23 or 7")
+}
+
+if (favorite !== 23){
+    console.log ("why not 23")
+}
