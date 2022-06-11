@@ -170,6 +170,8 @@ console.log(markHigherBMI2)
 
 // strings and template literals
 
+/*
+
 const firstName = 'jonas'
 const job = 'teacher'
 const birthYear = 1991
@@ -180,3 +182,6 @@ console.log (jonas)
 
 const jonasNew = `I'm ${firstName}, a ${(year - birthYear)} years old ${job}!`
 console.log (jonasNew)
+
+*/
+// --------------------------------------------------------------
