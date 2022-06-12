@@ -103,68 +103,6 @@ console.log (ageJonas, ageChungus, averageAge)
 */
 
 
-// --------------------------------------------------------------
-
-// coding challenge 1
-
-/*
-Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula:
-
-BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter).
-
-Your tasks:
-1. Store Mark's and John's mass and height in variables
-
-2. Calculate both their BMIs using the formula (you can even implement both
-versions)
-
-3. Create a Boolean variable 'markHigherBMI' containing information about
-whether Mark has a higher BMI than John.
-
-Test data:
-
-§ Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
-m tall.
-
-§ Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
-m tall.
-
-*/
-
-/*
-let massMark1 = 78
-let heightMark1 = 1.69
-
-let massJohn1 = 92
-let heightJohn1 = 1.95
-
-let bmiMark1 = (massMark1) / (heightMark1**2)
-console.log(bmiMark1)
-
-let bmiJohn1 = (massJohn1)/ (heightJohn1**2)
-console.log(bmiJohn1)
-
-let markHigherBMI1 = bmiMark1 > bmiJohn1
-console.log(markHigherBMI1)
-
-
-let massMark2 = 95
-let heightMark2 = 1.88
-
-let massJohn2 = 85
-let heightJohn2 = 1.76
-
-let bmiMark2 = (massMark2) / (heightMark2**2)
-console.log(bmiMark2)
-
-let bmiJohn2 = (massJohn2)/ (heightJohn2**2)
-console.log(bmiJohn2)
-
-let markHigherBMI2 = bmiMark2 > bmiJohn2
-console.log(markHigherBMI2)
-
-*/
-
 
 // --------------------------------------------------------------
 
@@ -209,58 +147,6 @@ if(birthYear <= 2000) {
 }
 
 console.log(century)
-
-*/
-
-// --------------------------------------------------------------
-/* coding challenge 2
-
-Use the BMI example from Challenge #1, and the code you already wrote, and
-improve it.
-Your tasks:
-1. Print a nice output to the console, saying who has the higher BMI. The message
-is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
-2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
-BMI (28.3) is higher than John's (23.9)!"
-Hint: Use an if/else statement
-
-
-let massMark1 = 78
-let heightMark1 = 1.69
-
-let massJohn1 = 92
-let heightJohn1 = 1.95
-
-let bmiMark1 = (massMark1) / (heightMark1**2)
-let bmiJohn1 = (massJohn1)/ (heightJohn1**2)
-
-let markHigherBMI1 = bmiMark1 > bmiJohn1
-// console.log(bmiMark1, bmiJohn1, markHigherBMI1)
-
-if (bmiMark1 > bmiJohn1) {
-    console.log(`Mark's BMI is higher than John's! Mark's BMI (${bmiMark1}) is higher than John's (${bmiJohn1})`)
-} else {
-    console.log("John's BMI is higher than Mark's!")
-}
-
-
-let massMark2 = 95
-let heightMark2 = 1.88
-
-let massJohn2 = 85
-let heightJohn2 = 1.76
-
-let bmiMark2 = (massMark2) / (heightMark2**2)
-let bmiJohn2 = (massJohn2)/ (heightJohn2**2)
-
-let markHigherBMI2 = bmiMark2 > bmiJohn2
-// console.log(bmiMark2, bmiJohn2, markHigherBMI2)
-
-if (bmiMark2 > bmiJohn2) {
-    console.log(`Mark's BMI is higher than John's! Mark's BMI (${bmiMark2}) is higher than John's (${bmiJohn2})`)
-} else {
-    console.log("John's BMI is higher than Mark's!")
-}
 
 */
 
@@ -330,25 +216,54 @@ if (bmiMark2 > bmiJohn2) {
 
 // equality operators
 
-const age = 18
-if (age === 18) console.log(' you just became an adult')
+// const age = 18
+// if (age === 18) console.log(' you just became an adult')
 
-console.log (18 === '18')
-console.log (18 == '18')
-console.log (18 == 18)
+// console.log (18 === '18')
+// console.log (18 == '18')
+// console.log (18 == 18)
 
-const favorite = prompt("what's your favorite number")
-console.log(favorite)
-console.log(typeof favorite)
+// const favorite = prompt("what's your favorite number")
+// console.log(favorite)
+// console.log(typeof favorite)
 
-if (favorite == 23) {
-    console.log(' cool you are cool')
-} else if(favorite === "7") {
-    console.log(' 7 is cool')
-} else {
-    console.log ("your number is not 23 or 7")
-}
+// if (favorite == 23) {
+//     console.log(' cool you are cool')
+// } else if(favorite === "7") {
+//     console.log(' 7 is cool')
+// } else {
+//     console.log ("your number is not 23 or 7")
+// }
 
-if (favorite !== 23){
-    console.log ("why not 23")
-}
+// if (favorite !== 23){
+//     console.log ("why not 23")
+// }
+
+
+// --------------------------------------------------------------
+
+// boolean logicical operators
+
+// const hasDriversLicense = true // A
+// const hasGoodVision = true //A
+
+// console.log(hasDriversLicense && hasGoodVision)
+// console.log(hasDriversLicense || hasGoodVision)
+// console.log(!hasDriversLicense)
+
+// const shouldDrive = hasDriversLicense && hasGoodVision
+
+// // if (shouldDrive) {
+// //     console.log ('sarah is able to drive')
+// // } else {
+// //     console.log ('someone else should drive')
+// // }
+
+// const isTired = true
+// console.log(hasDriversLicense && hasGoodVision && isTired)
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log ('sarah is able to drive')
+// } else {
+//     console.log ('someone else should drive')
+// }
