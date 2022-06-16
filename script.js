@@ -267,3 +267,24 @@ console.log(century)
 // } else {
 //     console.log ('someone else should drive')
 // }
+
+// --------------------------------------------------------------
+
+// The switch statement
+
+const day = 'thursday'
+
+switch (day) {
+    case 'monday':
+        console.log ("this is the besy day")
+        break;
+    case 'tuesday':
+        console.log ("you a beast homie")
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log ("week is almost over")
+        break;
+    default:
+        console.log ("this is not a valid day")
+}
