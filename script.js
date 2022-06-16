@@ -98,7 +98,7 @@ const ageChungus = now - 2018
 // const averageAge = ageJonas + ageChungus / 2 (this will give incorrect answer because it divides first before adding)
 // console.log (ageJonas, ageChungus, averageAge) (this will give incorrect answer because it divides first before adding)
 const averageAge = (ageJonas + ageChungus) / 2
-console.log (ageJonas, ageChungus, averageAge)
+console.log (ageJonas, ageChungus, averageAge) // this will give the correct answer
 
 */
 
